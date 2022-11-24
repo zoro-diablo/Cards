@@ -1,0 +1,72 @@
+:root{
+    --color-1:linear-gradient(to right, #41295a, #2f0743);
+    --color-2:linear-gradient(to right, #000000, #434343);
+    --color-3:linear-gradient(to right, #7b19c6db, #000000,rgb(1, 0, 10));
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background:var(--color-3);
+    height: 100vh;
+    display: grid;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+    justify-content: space-around;
+  
+
+}
+
+.card{
+    background-color: #1c1b2943;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+.container{
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.details{
+    padding: 20px 10px;
+}
+
+.details > h3{
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details > p{
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    
+}
+
+
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(48, 137, 239, 0.962) 0px 0px 0px 3px;
+}
+
